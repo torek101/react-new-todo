@@ -18,6 +18,6 @@ post_build:
     - echo push latest Docker images to ECR...
     - docker push 962804699607.dkr.ecr.us-west-2.amazonaws.com/terraformasaurus-rex-repo:latest
     - ﻿﻿echo writing image definitions file...
-    - printf '[{"name":"terraformasaurus-rex-container","962804699607.dkr.ecr.us-west-2.amazonaws.com/terraformasaurus-rex-repo:latest":"962804699607.dkr.ecr.us-west-2.amazonaws.com/terraformasaurus-rex-repo:latest"}]' > ./imagedefinitions.json
+    - printf '[{"name":"terraformasaurus-rex-container","962804699607.dkr.ecr.us-west-2.amazonaws.com/terraformasaurus-rex-repo:latest":"962804699607.dkr.ecr.us-west-2.amazonaws.com/terraformasaurus-rex-repo:latest"}]' > imagedefinitions.json
 artifacts:
-    files: ./imagedefinitions.json
+    files: 'imagedefinitions.json'
