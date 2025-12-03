@@ -11,7 +11,7 @@ phases:
     commands:
       - echo build Docker image on 'date'
       - docker build -t terraformasaurus-rex-image:latest .
-      - docker tag terraformasaurus-rex-image:latest 962804699607.dkr.ecr.us-west-2.amazonaws.com/terraformasaurus-rex-image:latest 
+      - docker tag terraformasaurus-rex-image:latest 962804699607.dkr.ecr.us-west-2.amazonaws.com/terraformasaurus-rex-repo:latest 
   post_build: 
     commands:
       - echo build Docker image complete 'date'
